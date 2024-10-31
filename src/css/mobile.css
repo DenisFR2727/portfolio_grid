@@ -1,0 +1,56 @@
+/* inspiration */
+@media (max-width: 375px) {
+  .promo {
+    .promo__title {
+      font-size: 22px;
+    }
+  }
+  .keywords {
+    display: none;
+    padding: 0;
+  }
+  .about {
+    .about__text {
+      width: fit-content;
+      font-size: 20px;
+    }
+  }
+  .inspiration__grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-auto-rows: auto;
+    gap: 10px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    #man {
+      grid-column: 1/3;
+    }
+    #horses {
+      grid-column: 1/3;
+    }
+    #bridge {
+      grid-column: 1/3;
+    }
+    #sky {
+      grid-column: 1/3;
+    }
+    #cat {
+      grid-column: 1/3;
+    }
+    #tenement {
+      /* grid-row: 4/4; */
+      grid-column: 1/3;
+      object-fit: contain;
+    }
+  }
+  .costomers__grid {
+    grid-template-columns: repeat(2, 1fr);
+    img {
+      min-width: 100px;
+    }
+  }
+}
